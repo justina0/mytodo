@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>Canvas 01</title>
+    <script type="application/javascript">
+        function draw() {
+            var ctx = document.getElementById('canvas').getContext('2d');
+            ctx.font = "48px serif";
+            ctx.strokeText("Hello world", 10, 50);
+        }
+    </script>
+</head>
+
+<body onload="draw();">
+    <h1>绘制文本</h1>
+    <canvas id="canvas" width="150" height="150"></canvas>
+</body>
